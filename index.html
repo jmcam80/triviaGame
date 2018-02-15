@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-sm-12">
+        <img class="backgroundImg" id="backgroundImg" src="./assets/images/TrinMorphNeo.png" alt="The Matrix Neo, Morpheus and Trinity">
+    </div>
+    </div> -->
+        <div class="row">
+            <div class="col-md-4">
+                <button class="trinity" id="trinity">Trinity</button>
+            </div>
+            <div class="col-md-4">
+                <button class="morpheus" id="morpheus">Morpheus</button>
+            </div>
+            <div class="col-md-4">
+                <button class="neo" id="neo">Neo</button>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-2"></div>
+
+            <div class="col-md-8">
+                <div class="trinityForm" id="trinityForm">
+
+                    <form name="quiz" method="post" name="buttons" id="trinQuiz" onsubmit="return false">
+
+                        <li>
+                            <div class="question">What role did Trinity play in The Matrix</div>
+                        </li>
+                        <input id="answer" type="radio" name="group1" value="wrong"> Barista
+                        <br>
+                        <input id="answer" type="radio" name="group1" value="wrong"> Corporate Lawyer
+                        <br>
+                        <input id="answer" type="radio" name="group1" value="correct"> Real World Revolutionary
+                        <br>
+
+                        <li>
+                            <div class="question">Who relied on Trinity the most?</div>
+                        </li>
+                        <input id="answer" type="radio" name="group2" value="wrong">The Oracle
+                        <br>
+                        <input id="answer" type="radio" name="group2" value="wrong">Smith
+                        <br>
+                        <input id="answer" type="radio" name="group2" value="correct">Neo
+                        <br>
+
+                        <li>
+                            <div class="question">How did Trinity die in the 2nd movie?</div>
+                        </li>
+                        <input id="answer" type="radio" name="group3" value="wrong">Smith punched through her chest
+                        <br>
+                        <input id="answer" type="radio" name="group3" value="wrong"> An agent pushed her into oncoming traffic
+                        <br>
+                        <input id="answer" type="radio" name="group3" value="correct">An agent shot her while they were falling from a multiple story building
+                        <br>
+
+                        <button class="submit" onclick="return handleClick();" type="submit">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class=" morpheusForm" id="morpheusForm">
+                    <form name="quiz" method="post" name="buttons" id="trinQuiz" onsubmit="return false">
+
+                        <li>
+                            <div class="question">What role did Morpheus play in The Matrix</div>
+                        </li>
+                        <input id="answer" type="radio" name="group1" value="wrong"> Cabby
+                        <br>
+                        <input id="answer" type="radio" name="group1" value="wrong"> Airline Pilot
+                        <br>
+                        <input id="answer" type="radio" name="group1" value="correct"> Prophet
+                        <br>
+
+                        <li>
+                            <div class="question">Who relied on Morpheus the most?</div>
+                        </li>
+                        <input id="answer" type="radio" name="group2" value="wrong">Mouse
+                        <br>
+                        <input id="answer" type="radio" name="group2" value="wrong">Tank
+                        <br>
+                        <input id="answer" type="radio" name="group2" value="correct">Zion
+                        <br>
+
+                        <li>
+                            <div class="question">How did Morphus die in the 3rd movie?</div>
+                        </li>
+                        <input id="answer" type="radio" name="group3" value="wrong">Smith punched through his helmet
+                        <br>
+                        <input id="answer" type="radio" name="group3" value="wrong"> An agent pushed him into a tanker truck
+                        <br>
+                        <input id="answer" type="radio" name="group3" value="correct">Unless you saw a different movie than I did, he didn't die
+                        <br>
+
+                        <button class="submit" onclick="return handleClick();" type="submit">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="neoForm" id="neoForm">
+                    <form name="quiz" method="post" name="buttons" id="trinQuiz" onsubmit="return false">
+
+                        <li>
+                            <div class="question">What role did Neo play in The Matrix</div>
+                        </li>
+                        <input id="answer" type="radio" name="group1" value="wrong">The Junkie
+                        <br>
+                        <input id="answer" type="radio" name="group1" value="wrong">The Waiter
+                        <br>
+                        <input id="answer" type="radio" name="group1" value="correct"> The one
+                        <br>
+
+                        <li>
+                            <div class="question">Who got captured after brining Neo to see the Oracle?</div>
+                        </li>
+                        <input id="answer" type="radio" name="group2" value="wrong">Trinity
+                        <br>
+                        <input id="answer" type="radio" name="group2" value="wrong">Switch
+                        <br>
+                        <input id="answer" type="radio" name="group2" value="correct">Morpheus
+                        <br>
+
+                        <li>
+                            <div class="question">How did Neo die in the 3rd movie?</div>
+                        </li>
+                        <input id="answer" type="radio" name="group3" value="wrong">Smith burned his eyes with an electrical cable
+                        <br>
+                        <input id="answer" type="radio" name="group3" value="wrong"> A crazy person in the real world threw him off a suspended bridge
+                        <br>
+                        <input id="answer" type="radio" name="group3" value="correct">Re-uniting with Smith and ridding the virus from the Matrix
+                        <br>
+
+                        <button class="submit" onclick="return handleClick();" type="submit">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./assets/javascript/app.js"></script>
+</body>
+
+</html>

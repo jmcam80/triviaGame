@@ -1,0 +1,48 @@
+
+.col-md-4 {
+    z-index: 1;
+    font-weight: bolder;
+    font-size:25px;
+    
+   
+
+}
+
+body {
+    margin: 0;
+    background: url('https://cdn.movieweb.com/img.news.tops/NE5G2UgR0OYK96_2_a/Matrix-Reboot-Production-Warner-Bros-Studio.jpg');
+    background-size: 1440px 800px;
+    background-repeat:no-repeat;
+   display: compact;
+    font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* .trinityQuiz {
+    margin-top:150px;
+    width:100%;
+    
+    
+} */
+ 
+.trinityForm {
+    background: url('https://vignette.wikia.nocookie.net/matrix/images/3/3d/The_Matrix_Trinity_Kick.jpg/revision/latest?cb=20130217035931');
+    color:white;
+    width:100%;
+    background-repeat:no-repeat;
+
+}
+
+.morpheusForm {
+    background: url('http://superfitdads.com/wp-content/uploads/2015/12/Morpheus-armchair.jpg');
+    color:white;
+    width:100%;
+    background-repeat:no-repeat;
+}
+    
+.neoForm {
+    background: url('https://vignette.wikia.nocookie.net/powerlisting/images/b/bd/Neo_The_One.jpg/revision/latest?cb=20131018055648');
+    color:white;
+    width:100%;
+    background-repeat:no-repeat;
+    
+}
