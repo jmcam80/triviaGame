@@ -13,8 +13,13 @@ $("#trinity").click( function () {
 
 // set the function on click for morpheus based questions
 $("#morpheus").click( function () {
-
+var flag = true;
     $("#morpheusForm").css("display", "block");
+ if(flag===true) {   
+   function play(){
+      var audio = document.getElementById("audio");
+      audio.play();
+                };};
     
 });
 
