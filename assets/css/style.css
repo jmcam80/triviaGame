@@ -49,3 +49,17 @@ body {
 .submit {
     color:black;
 }
+
+.trinityScore {
+    display: none;
+}
+
+
+.morpheusScore {
+    display: none;
+}
+
+
+.neoScore {
+    display: none;
+}
